@@ -15,23 +15,30 @@ export default function EditTask() {
   return (
   
 <div className={`overlay ${editopen ? "show" : ""}`} tabIndex={-1}>
-  <form
-    onSubmit={(e) => {
-      e.preventDefault();
-    }}
-    className="w-full flex justify-center"
-  >
-    <div className="bg-white m-3 sm:m-5 p-4 sm:p-5 rounded-4xl shadow-cyan-900 shadow-xl/30
-      w-[92%]
-      sm:w-[90%]
-      md:w-[80%]
-      lg:w-[70%]
-      xl:w-[60%]
-      max-w-[900px]
-      max-h-[90vh]
-      overflow-y-auto
-      mx-auto"
-    >
+ <form
+  onSubmit={(e) => {
+    e.preventDefault();
+    saveedit();
+  }}
+    className="flex justify-center items-center w-full h-full bg-transparent"
+
+>
+ <div 
+  className="
+    bg-white
+    p-4 sm:p-5
+    rounded-4xl
+    shadow-cyan-900 shadow-xl/30
+    w-[92%]
+    sm:w-[90%]
+    md:w-[80%]
+    lg:w-[70%]
+    xl:w-[60%]
+    max-w-[900px]
+    max-h-[90vh]
+    overflow-y-auto
+  "
+>
       <div className="flex justify-center items-center text-black">
         <h2 className="CreateTask">Edit Task</h2>
       </div>
