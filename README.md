@@ -8,7 +8,11 @@
 
 ## 🌐 Live Demo
 
-🚀 **[View Live Demo]([YOUR_VERCEL_LINK](https://to-do-list-react-nu-six.vercel.app/))**
+<p align="center">
+  <a href="https://to-do-list-react-nu-six.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-View%20Website-black?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
 
 ---
 ## 📌 About The Project
@@ -51,9 +55,8 @@ Users can create, edit, delete, filter, and complete tasks while keeping track o
 
 The application is fully responsive and optimized for:
 
-* 💻 Desktop
 * 💻 Laptop
-* 📱 Tablet
+* ▭ Tablet
 * 📱 Mobile
 
 ---
