@@ -1,0 +1,13 @@
+.Dashde{
+    width: 250px;
+    height: 125px;
+    
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+}

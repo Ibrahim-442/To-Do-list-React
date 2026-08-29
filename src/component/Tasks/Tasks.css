@@ -1,0 +1,321 @@
+.ADDBTN {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #00a600;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #00a600;
+  transition: box-shadow 0.3s ease;
+}
+
+.ADDBTN,
+.ADDBTN span {
+  transition: 200ms;
+}
+
+.ADDBTN .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.ADDBTN .icon {
+  position: absolute;
+  border-left: 1px solid #007300;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ADDBTN svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.ADDBTN:hover {
+  background: #00a600;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ADDBTN:active {
+  background: #00cc00;
+}
+
+.ADDBTN:hover .text {
+  color: transparent;
+}
+
+.ADDBTN:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.ADDBTN:focus {
+  outline: none;
+}
+
+.ADDBTN:active .icon svg {
+  transform: scale(0.8);
+}
+
+.buttonSpan {
+  color: white;
+  margin: 150px;
+  font-size: 30px;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.iconadd {
+  color: rgb(83, 173, 178);
+  font-size: 150px;
+}
+.CreateTask {
+  font-family: "Proxima Nova", system-ui, sans-serif;
+}
+.prioandDate {
+  width: 20em;
+}
+
+
+.noselect {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+}
+
+.noselect,
+.noselect span {
+  transition: 200ms;
+}
+
+.noselect .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.noselect .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noselect svg {
+  width: 20px;
+  fill: #eee;
+}
+
+.noselect:hover {
+  background: #ff3636;
+}
+
+.noselect:hover .text {
+  color: transparent;
+}
+
+.noselect:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.noselect:focus {
+  outline: none;
+}
+
+.noselect:active .icon svg {
+  transform: scale(0.8);
+}
+
+.savebtn{
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+background: #198754;
+  color: #fff;
+}
+
+.savebtn,
+.savebtn span {
+  transition: 200ms;
+}
+
+.savebtn .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.savebtn .icon {
+  position: absolute;
+  border-left: 1px solid #115e3a;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.savebtn svg {
+ width: 20px;
+  fill: #eee;
+}
+
+.savebtn:hover {
+  background: #198754;
+}
+
+.savebtn:hover .text {
+  color: transparent;
+}
+
+.savebtn:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.savebtn:focus {
+  outline: none;
+}
+
+.savebtn:active .icon svg {
+  transform: scale(0.8);
+}
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.overlay.show .popup {
+  transform: scale(1);
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+.task-checkbox:checked + .check svg {
+  stroke: #4285f4;
+}
+
+.task-checkbox:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+.task-checkbox:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.describe {
+    margin: 0;
+    color: #999ca3;
+}
+.noCon{
+  height: 12vh;
+  align-items: center;
+}
+.noConFont{
+  font-size: larger;
+  margin: 0;
+}
